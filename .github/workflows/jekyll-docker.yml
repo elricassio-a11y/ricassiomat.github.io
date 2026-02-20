@@ -1,0 +1,20 @@
+nome: Site Jekyll CI
+
+em:
+ empurrar:
+ ramos: [ "diretor" ]
+ pull_solicitação:
+ ramos: [ "diretor" ]
+
+empregadores:
+ construir:
+
+ continua correndo: ubuntu-mais recente
+
+ etapas:
+    - usos: ações/checkout@v4
+    - nome: Construa o site no contêiner jekyll/construtor
+ corretor: |
+ execução do docker \"chmod -R 777/srv/jekyll && jekyll build --futuro""chmod -R 777/srv/jekyll && jekyll build --futuro"
+ -v ${{ github.espaço de trabalho }}:/srv/jekyll -v ${{ github.espaço de trabalho }}/_site:/srv/jekyll/_site \
+ jekyll/builder:mais recente/bin/bash -c "chmod -R 777/srv/jekyll && jekyll build --futuro"
