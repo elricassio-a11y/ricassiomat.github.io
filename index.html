@@ -7,41 +7,36 @@
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
     <style>
-        body { font-family: "Times New Roman", serif; margin: 0; display: flex; justify-content: center; padding: 20px; }
+        body { font-family: "Times New Roman", serif; margin: 0; display: flex; justify-content: center; padding: 40px; }
         .container { max-width: 800px; width: 100%; display: flex; gap: 30px; }
         .sidebar { flex: 0 0 200px; }
         .main { flex: 1; }
-        h1 { font-variant: small-caps; margin-bottom: 0; }
-        h2 { border-bottom: 1px solid #000; font-size: 1.2em; margin-top: 20px; }
+        h1 { font-variant: small-caps; margin-bottom: 5px; }
+        h2 { border-bottom: 1px solid #000; font-size: 1.1em; margin-top: 20px; }
         table { width: 100%; border-collapse: collapse; }
         th { text-align: left; border-bottom: 2px solid #000; padding: 5px; }
         td { border-bottom: 1px solid #eee; padding: 8px 5px; font-size: 0.9em; }
-        .profile-img { width: 100%; border: 1px solid #ccc; background: #f9f9f9; aspect-ratio: 1/1; display: block; }
     </style>
 </head>
 <body>
 <div class="container">
-    <div class="sidebar">
-        <img src="perfil.jpg" alt="Ricássio Rodrigues" class="profile-img">
+    <aside class="sidebar">
         <h1>Ricássio Rodrigues</h1>
         <p>Matemático & Instrutor.</p>
         <p><a href="mailto:terrabitando@gmail.com">✉️ Contato</a></p>
-    </div>
-    <div class="main">
+    </aside>
+    <main class="main">
         <h2>📚 BIBLIOGRAFIA DE ELITE</h2>
         <table>
             <thead><tr><th>Título da Obra</th><th>Autor</th></tr></thead>
             <tbody>
                 <tr><td>Elementary Number Theory</td><td>David M. Burton</td></tr>
-                <tr><td>Introdução à Teoria dos Números</td><td>José Plínio de Oliveira Santos</td></tr>
-                <tr><td>Tópicos de Matemática Elementar - Vol 1</td><td>Antonio Caminha</td></tr>
-                <tr><td>Círculos Matemáticos</td><td>Dmitri Fomin et al.</td></tr>
+                <tr><td>Introdução à Teoria dos Números</td><td>José Plínio</td></tr>
+                <tr><td>Tópicos de Matemática Elementar</td><td>Antonio Caminha</td></tr>
             </tbody>
         </table>
-        <footer style="margin-top:40px; color:#999;">
-            $$ a^{p-1} \equiv 1 \pmod{p} $$
-        </footer>
-    </div>
+        <footer style="margin-top:40px; color:#ccc;">$$ a^{p-1} \equiv 1 \pmod{p} $$</footer>
+    </main>
 </div>
 </body>
 </html>
