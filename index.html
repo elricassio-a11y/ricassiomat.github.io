@@ -7,23 +7,25 @@
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
     <style>
-        body { font-family: "Times New Roman", serif; margin: 0; display: flex; justify-content: center; padding: 40px; }
-        .container { max-width: 800px; width: 100%; display: flex; gap: 30px; }
-        .sidebar { flex: 0 0 200px; }
+        body { font-family: "Times New Roman", serif; margin: 0; display: flex; justify-content: center; padding: 40px; background: #fff; }
+        .container { max-width: 900px; width: 100%; display: flex; gap: 50px; }
+        .sidebar { flex: 0 0 200px; border-right: 1px solid #eee; padding-right: 20px; }
         .main { flex: 1; }
-        h1 { font-variant: small-caps; margin-bottom: 5px; }
-        h2 { border-bottom: 1px solid #000; font-size: 1.1em; margin-top: 20px; }
-        table { width: 100%; border-collapse: collapse; }
-        th { text-align: left; border-bottom: 2px solid #000; padding: 5px; }
-        td { border-bottom: 1px solid #eee; padding: 8px 5px; font-size: 0.9em; }
+        h1 { font-variant: small-caps; font-size: 1.8em; margin: 0; color: #003366; }
+        h2 { border-bottom: 1px solid #000; font-size: 1.1em; margin-top: 30px; text-transform: uppercase; }
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        th { text-align: left; border-bottom: 2px solid #000; padding: 5px; font-size: 0.8em; color: #666; }
+        td { border-bottom: 1px solid #eee; padding: 10px 5px; font-size: 0.95em; }
+        .profile-img { width: 100%; aspect-ratio: 1/1; background: #f4f4f4; border: 1px solid #ddd; object-fit: cover; }
     </style>
 </head>
 <body>
 <div class="container">
     <aside class="sidebar">
+        <img src="perfil.jpg" alt="Foto" class="profile-img">
         <h1>Ricássio Rodrigues</h1>
-        <p>Matemático & Instrutor.</p>
-        <p><a href="mailto:terrabitando@gmail.com">✉️ Contato</a></p>
+        <p style="font-size: 0.9em; color: #666;">Matemático & Instrutor Olímpico.</p>
+        <p style="font-size: 0.8em;"><a href="mailto:terrabitando@gmail.com" style="color: #003366; text-decoration: none;">✉️ Contato</a></p>
     </aside>
     <main class="main">
         <h2>📚 BIBLIOGRAFIA DE ELITE</h2>
@@ -31,11 +33,14 @@
             <thead><tr><th>Título da Obra</th><th>Autor</th></tr></thead>
             <tbody>
                 <tr><td>Elementary Number Theory</td><td>David M. Burton</td></tr>
-                <tr><td>Introdução à Teoria dos Números</td><td>José Plínio</td></tr>
-                <tr><td>Tópicos de Matemática Elementar</td><td>Antonio Caminha</td></tr>
+                <tr><td>Introdução à Teoria dos Números</td><td>José Plínio de Oliveira Santos</td></tr>
+                <tr><td>Tópicos de Matemática Elementar - Vol 1</td><td>Antonio Caminha</td></tr>
+                <tr><td>Círculos Matemáticos</td><td>Dmitri Fomin et al.</td></tr>
             </tbody>
         </table>
-        <footer style="margin-top:40px; color:#ccc;">$$ a^{p-1} \equiv 1 \pmod{p} $$</footer>
+        <footer style="margin-top: 80px; text-align: center; color: #bbb; font-size: 0.8em;">
+            $$ a^{p-1} \equiv 1 \pmod{p} $$
+        </footer>
     </main>
 </div>
 </body>
