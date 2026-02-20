@@ -1,9 +1,4 @@
-title: Ricássio Rodrigues | Wiki
-email: seuemail@exemplo.com
-description: Repositório acadêmico e de matemática olímpica.
-theme: minima # Este é um tema básico e leve, estilo acadêmico.
-
-# Configurações para o KaTeX (Matemática)
-kramdown:
-  math_engine: mathjax # O Jekyll usa isso para entender LaTeX
-  
+title: Ricássio Rodrigues | Math Wiki
+remote_theme: jekyll/minima
+plugins:
+  - jekyll-remote-theme
